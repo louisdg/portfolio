@@ -23,4 +23,9 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "react/jsx-curly-brace-presence": "error",
   },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 };
