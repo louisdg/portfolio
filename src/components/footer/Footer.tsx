@@ -1,5 +1,5 @@
-import { Container, Link, Toolbar, Typography } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { Container, Link, Toolbar, Typography } from "@mui/material";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
