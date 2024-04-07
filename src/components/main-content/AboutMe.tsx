@@ -8,7 +8,8 @@ function AboutMe() {
         <Typography component="p" variant="body2">
           Ever since I got into coding in 2014, I have never stopped having fun
           doing it. Today, I mainly focus on learning how to improve the quality
-          of the code I produce (👋 Robert C. Martin, aka "Uncle Bob").
+          of the code I produce (👋 Robert C. Martin, aka &ldquo;Uncle
+          Bob&rdquo;).
         </Typography>
         <Typography component="p" variant="body2">
           At{" "}
