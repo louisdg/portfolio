@@ -7,6 +7,6 @@ describe("App", () => {
   });
 
   it("renders the application", () => {
-    expect(screen.getByText("Hello Vite + React!"));
+    expect(screen.getByText("Louis De Gaudenzi"));
   });
 });

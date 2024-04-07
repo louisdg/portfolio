@@ -5,15 +5,7 @@
 
 <br />
 <div align="center">
-
-<h3 align="center">react-app-template</h3>
-
-  <p align="center">
-    This is a template for quickly getting started building frontend applications. It is the starting point of all my personal projects, so I decided to share it as a template repository.
-    <br />
-    <br />
-    <a href="https://github.com/louisdg/react-app-template/issues">Report Bug</a>
-  </p>
+<h3 align="center">Portfolio</h3>
 </div>
 
 <details>
@@ -55,7 +47,7 @@
 
 ## Getting Started
 
-To get the template up and running in your own repository, follow these simple steps.
+To get the portfolio up and running in your own repository, follow these simple steps.
 
 ### Prerequisites
 
@@ -63,11 +55,11 @@ To get the template up and running in your own repository, follow these simple s
 
 ### Installation
 
-1. Follow [this GitHub documentation of how to create a repository from a template](https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-2. Install npm dependencies
-   ```
-   npm install
-   ```
+Install npm dependencies
+
+```
+npm install
+```
 
 ## Usage
 
@@ -124,7 +116,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Louis De Gaudenzi - [LinkedIn][linkedin-url] - louisdego@gmail.com
 
-Project Link: [https://github.com/louisdg/react-app-template](https://github.com/louisdg/react-app-template)
+Project Link: [https://github.com/louisdg/portfolio](https://github.com/louisdg/portfolio)
 
 [forks-shield]: https://img.shields.io/github/forks/louisdg/react-app-template.svg?style=for-the-badge
 [forks-url]: https://github.com/louisdg/react-app-template/network/members

@@ -1,42 +1,157 @@
 import { createTheme } from "@mui/material";
 import colors from "./colors";
-import fonts from "./fonts";
 
 export default createTheme({
   palette: {
-    mode: "light",
+    mode: "dark",
+    background: {
+      default: colors["purple/darkest"],
+      paper: colors["neutrals/white/6.25%"],
+    },
+    text: {
+      primary: colors["neutrals/white/75%"],
+    },
+    primary: {
+      main: colors.purple,
+      dark: colors["purple/dark"],
+    },
+    secondary: {
+      main: colors.pink,
+    },
   },
   typography: {
-    fontFamily: ["Barlow", '"Helvetica Neue"', "Arial", "sans-serif"].join(","),
+    fontFamily: ["Manrope", "sans-serif"].join(","),
+    body1: {
+      color: colors["neutrals/white/75%"],
+    },
+    body2: {
+      color: colors["neutrals/white/50%"],
+      fontSize: "1rem",
+      lineHeight: "1.75rem",
+    },
   },
   components: {
     MuiButtonBase: {
       defaultProps: {
         disableRipple: true,
       },
+      styleOverrides: {
+        root: {
+          "&:focus-visible": {
+            outline: `2px ${colors["neutrals/white"]} solid`,
+          },
+        },
+      },
     },
+
     MuiButton: {
       defaultProps: {
         disableElevation: true,
         variant: "contained",
       },
+      variants: [
+        {
+          props: {
+            color: "primary",
+          },
+          style: {
+            "&.MuiButton-root:active": {
+              backgroundColor: colors["purple/darker"],
+            },
+          },
+        },
+      ],
       styleOverrides: {
         root: {
-          borderRadius: "16px",
-          background: "linear-gradient(180deg, #FFF3B5 0%, #FFA800 100%)",
-          boxShadow: `0px 8px 16px 0px ${colors["neutrals/black/25%"]}, 0px -4px 8px 0px ${colors["yellow/100"]} inset, 0px 4px 8px 0px ${colors["neutrals/white"]} inset`,
-          color: colors["yellow/50"],
-          textShadow: `0px 2px 4px ${colors["yellow/300"]}`,
-          padding: "32px 100px",
-          transition: "transform 0.25s ease",
-          "&:hover, &:focus-visible": {
-            boxShadow: `0px 8px 16px 0px ${colors["neutrals/black/25%"]}, 0px -4px 8px 0px ${colors["yellow/100"]} inset, 0px 4px 8px 0px ${colors["neutrals/white"]} inset, 0px 0px 16px 0px ${colors["neutrals/white/50%"]}`,
+          textTransform: "none",
+          borderRadius: 12,
+        },
+      },
+    },
+
+    MuiIconButton: {
+      defaultProps: {
+        size: "large",
+      },
+    },
+
+    MuiAppBar: {
+      defaultProps: {
+        position: "static",
+        elevation: 0,
+        color: "inherit",
+      },
+    },
+
+    MuiToolbar: {
+      defaultProps: {
+        disableGutters: true,
+      },
+    },
+
+    MuiTooltip: {
+      defaultProps: {
+        enterDelay: 500,
+        enterNextDelay: 500,
+        placement: "top",
+        arrow: true,
+      },
+      styleOverrides: {
+        arrow: {
+          "&::before": {
+            backgroundColor: colors["neutrals/black"],
           },
-          "&:active": {
-            transition: "transform 0.1s ease",
-            transform: "scale(0.95)",
+        },
+        tooltip: {
+          backgroundColor: colors["neutrals/black"],
+          borderRadius: 8,
+          fontSize: "1rem",
+        },
+      },
+    },
+
+    MuiPaper: {
+      defaultProps: {
+        elevation: 0,
+      },
+      styleOverrides: {
+        root: {
+          borderRadius: 16,
+          padding: 16,
+          WebkitBackdropFilter: "blur(32px)",
+          backdropFilter: "blur(32px)",
+        },
+      },
+    },
+
+    MuiChip: {
+      defaultProps: {
+        color: "secondary",
+      },
+      variants: [
+        {
+          props: { color: "secondary" },
+          style: {
+            backgroundColor: colors["pink/12.5%"],
+            color: colors.pink,
           },
-          ...fonts["button/main"],
+        },
+      ],
+      styleOverrides: {
+        root: {
+          fontWeight: 700,
+        },
+      },
+    },
+
+    MuiLink: {
+      defaultProps: {
+        underline: "hover",
+      },
+      styleOverrides: {
+        root: {
+          color: colors["neutrals/white/75%"],
+          fontWeight: 700,
         },
       },
     },
