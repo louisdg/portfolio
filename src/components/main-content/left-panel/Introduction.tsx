@@ -30,7 +30,7 @@ function Introduction() {
               <Typography component="span" variant="body1">
                 full stack
               </Typography>{" "}
-              web applications, with a emphasis on{" "}
+              web applications, with an emphasis on{" "}
               <Typography component="span" variant="body1">
                 code quality
               </Typography>

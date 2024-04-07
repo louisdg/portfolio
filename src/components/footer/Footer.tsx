@@ -1,4 +1,5 @@
 import { Container, Link, Toolbar, Typography } from "@mui/material";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -6,8 +7,21 @@ function Footer() {
   return (
     <Toolbar component="footer" sx={{ textAlign: "center", zIndex: 1 }}>
       <Container>
-        <Typography variant="body2">
-          Made with ♥ by Louis De Gaudenzi | {currentYear} |{" "}
+        <Typography
+          variant="body2"
+          sx={{
+            marginTop: 4,
+            marginBottom: 4,
+            gap: 1,
+          }}
+        >
+          Made with{" "}
+          <FavoriteIcon
+            aria-label="love"
+            color="error"
+            sx={{ verticalAlign: "middle" }}
+          />{" "}
+          by Louis De Gaudenzi · {currentYear} ·{" "}
           <Link
             href="https://github.com/louisdg/portfolio"
             target="_blank"

@@ -20,8 +20,8 @@ function Projects() {
           "The main part of our project was to create a neural network capable of recognising forest animals." +
             " This was done using Python with the TensorFlow library.",
           "The embedded card is programmable in C, and communicates with servers to save data to an InfluxDB database. Grafana then allows this data to be displayed on a dashboard in the form of graphs." +
-            " We developed encoders/decoders in C for the embedded part and in JavaScript for the cloud.",
-          "This project was worked on with Alexis ROLLIN, Élisa BEAUGRAND, Louis DE GAUDENZI, Tom GRAUGNARD," +
+            " We developed encoders/decoders in C for the embedded part, and in JavaScript for the cloud.",
+          "This project was worked on with Alexis ROLLIN, Élisa BEAUGRAND, Tom GRAUGNARD," +
             " Baptiste JOLAINE, Benoît BARRE, Grégoire CARROT and Aurélien REYNAUD.",
         ]}
         link={{

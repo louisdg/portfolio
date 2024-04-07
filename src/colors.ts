@@ -2,6 +2,7 @@ export default {
   "neutrals/white": "#FFFFFF",
   "neutrals/white/75%": "#FFFFFFBF",
   "neutrals/white/50%": "#FFFFFF7F",
+  "neutrals/white/25%": "#FFFFFF3F",
   "neutrals/white/6.25%": "#FFFFFF0F",
   "neutrals/black": "#000000",
   "neutrals/black/25%": "#0000003F",
