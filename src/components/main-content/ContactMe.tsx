@@ -8,7 +8,9 @@ function ContactMe() {
       <Reveal>
         <Stack spacing={1}>
           <Link href="mailto:louis.degaudenzi@gmail.com">
-            louis.degaudenzi@gmail.com
+            louis.degaudenzi
+            <wbr />
+            @gmail.com
           </Link>
           <Link href="tel:+33695639006">(+33) 6 95 63 90 06</Link>
           <Typography component="p" variant="body2">

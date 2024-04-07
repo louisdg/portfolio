@@ -33,10 +33,12 @@ function Project({
 
   return (
     <RevealPaper>
-      <Stack spacing={1}>
-        <h3>{title}</h3>
-        <h4>{year}</h4>
-        <Skills skills={skills} />
+      <Stack spacing={2}>
+        <Stack spacing={1}>
+          <h3>{title}</h3>
+          <h4>{year}</h4>
+          <Skills skills={skills} />
+        </Stack>
         {image && (
           <img
             style={{
@@ -54,7 +56,14 @@ function Project({
             {paragraph}
           </Typography>
         ))}
-        <Stack {...(!isMobile && { direction: "row" })} gap={1} flexWrap="wrap">
+        <Stack
+          {...(!isMobile && {
+            direction: "row",
+            sx: { justifyContent: "flex-end" },
+          })}
+          gap={2}
+          flexWrap="wrap"
+        >
           {link && (
             <Button
               component={Link}

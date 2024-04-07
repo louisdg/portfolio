@@ -1,5 +1,5 @@
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import { Fade, useScrollTrigger } from "@mui/material";
+import { Fade, Stack, Typography, useScrollTrigger } from "@mui/material";
 
 function ScrollDownReminder() {
   const scrolled = useScrollTrigger({
@@ -9,24 +9,32 @@ function ScrollDownReminder() {
 
   return (
     <Fade in={!scrolled}>
-      <ArrowDownwardIcon
-        fontSize="large"
+      <Stack
+        spacing={2}
         sx={{
           alignSelf: "center",
-          "@keyframes pulsate": {
-            "0%": {
-              transform: "translateY(0)",
-            },
-            "50%": {
-              transform: "translateY(8px)",
-            },
-            "100%": {
-              transform: "translateY(0)",
-            },
-          },
-          animation: "pulsate 1s infinite ease",
         }}
-      />
+        alignItems="center"
+      >
+        <Typography variant="body2">Scroll down to learn more</Typography>
+        <ArrowDownwardIcon
+          fontSize="large"
+          sx={{
+            "@keyframes pulsate": {
+              "0%": {
+                transform: "translateY(0)",
+              },
+              "50%": {
+                transform: "translateY(8px)",
+              },
+              "100%": {
+                transform: "translateY(0)",
+              },
+            },
+            animation: "pulsate 1s infinite ease",
+          }}
+        />
+      </Stack>
     </Fade>
   );
 }

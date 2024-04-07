@@ -53,6 +53,7 @@ export default createTheme({
         {
           props: {
             color: "primary",
+            variant: "contained",
           },
           style: {
             "&.MuiButton-root:active": {
@@ -72,6 +73,13 @@ export default createTheme({
     MuiIconButton: {
       defaultProps: {
         size: "large",
+      },
+      styleOverrides: {
+        root: {
+          "&:active": {
+            backgroundColor: colors["neutrals/white/25%"],
+          },
+        },
       },
     },
 

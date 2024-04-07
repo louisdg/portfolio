@@ -3,7 +3,11 @@ import { ReactNode, useEffect, useRef } from "react";
 
 function Reveal({ children }: { children: ReactNode }) {
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { margin: "-10%", amount: 0.25, once: true });
+  const isInView = useInView(ref, {
+    margin: "-20%",
+    amount: "some",
+    once: true,
+  });
   const animationControls = useAnimation();
 
   useEffect(() => {
