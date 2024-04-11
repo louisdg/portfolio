@@ -19,7 +19,7 @@ function Education() {
         city="Grenoble"
         country="France"
         startYear={2017}
-        endYear={2028}
+        endYear={2018}
       />
       <Degree
         title="Double Major in Mathematics and Computer Science"
