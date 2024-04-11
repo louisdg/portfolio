@@ -18,7 +18,7 @@ function Experience() {
           "Data modeling, managing and interacting with PostgreSQL databases",
           "Developing Electron desktop applications",
           "Implementing automated unit, end-to-end and integration tests with Jest, Vitest, TestCafe, Testing Library for the frontend, and JUnit for the backend",
-          "Using test-driven development methodology to maximise test coverage and improve the design and maintainability of the software",
+          "Using behaviour-driven development methodology to improve the design and maintainability of the software, especially the automated tests",
           "Refactoring codebases, reducing coupling of services, and rearchitecting and modernising technical stacks",
           "Setting up CI/CD pipelines to build, test and deploy applications",
           "Maintaining clear and comprehensive documentation",

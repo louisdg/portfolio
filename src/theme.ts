@@ -115,6 +115,10 @@ export default createTheme({
           borderRadius: 8,
           fontSize: "1rem",
         },
+        popper: {
+          paddingLeft: 16,
+          paddingRight: 16,
+        },
       },
     },
 

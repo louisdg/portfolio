@@ -1,5 +1,6 @@
 import { Link, Stack, Typography } from "@mui/material";
 import Reveal from "../util/Reveal";
+import MyCat from "./MyCat";
 
 function AboutMe() {
   return (
@@ -46,7 +47,8 @@ function AboutMe() {
         </Typography>
         <Typography component="p" variant="body2">
           When I’m not in front of a computer, you can either find me at the
-          gym, hanging out with my cat, or trying to learn riffs on the guitar.
+          gym, hanging out with <MyCat />, or trying to learn riffs on the
+          guitar.
         </Typography>
       </Stack>
     </Reveal>
