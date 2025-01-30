@@ -12,7 +12,6 @@ function ContactMe() {
             <wbr />
             @gmail.com
           </Link>
-          <Link href="tel:+33695639006">(+33) 6 95 63 90 06</Link>
           <Typography component="p" variant="body2">
             You can also reach out to me on my{" "}
             <Link
